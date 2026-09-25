@@ -1,0 +1,45 @@
+{
+  "history": [
+    {
+      "id": "qa_1788985356985",
+      "type": "text_qa",
+      "title": "What fertilizer should I use for wheat in ear...",
+      "snippet": "Dear farmer brother, providing proper nutrition during the early stage (at sowing and firs...",
+      "date": "2026-09-09T20:22:36.985Z",
+      "language": "en",
+      "data": {
+        "question": "What fertilizer should I use for wheat in early stage?",
+        "answer": "Dear farmer brother, providing proper nutrition during the early stage (at sowing and first irrigation) of wheat is crucial for good growth and tillering:\n\n* **At Sowing Time (Basal Dose):** Apply 50 kg DAP + 20-25 kg MOP (Potash) per acre, OR 75 kg NPK (12:32:16) per acre.\n* **First Irrigation (20-25 Days - CRI Stage):** Apply 40-45 kg Neem Coated Urea per acre as top dressing during or right after the first irrigation.\n* **Micronutrients:** If soil is deficient in zinc, apply 10 kg Zinc Sulphate (21%) per acre at sowing time. (Note: Do not mix Zinc directly with DAP).\n* **Organic Option:** Apply well-decomposed FYM (Farm Yard Manure) or Jeevamrit to improve soil health.\n* **Safety Precaution:** Always wear gloves and a protective mask while handling and applying chemical fertilizers.",
+        "answerHindi": "किसान भाई, गेहूं की शुरुआती अवस्था (बुवाई और पहली सिंचाई के समय) में सही उर्वरक देना बहुत महत्वपूर्ण है:\n\n* **बुवाई के समय (बेसल खुराक):** प्रति एकड़ 50 किग्रा DAP और 20-25 किग्रा MOP (पोटाश) डालें, या 75 किग्रा NPK (12:32:16) का उपयोग करें।\n* **पहली सिंचाई के समय (20-25 दिन बाद):** क्राउन रूट (CRI) अवस्था में पहली सिंचाई करें और सिंचाई के तुरंत बाद 40-45 किग्रा नीम कोटेड यूरिया प्रति एकड़ छिड़कें।\n* **जिंक की खुराक:** यदि मिट्टी में जिंक की कमी है, तो बुवाई के समय 10 किग्रा जिंक सल्फेट (21%) प्रति एकड़ डालें। (ध्यान दें: जिंक और DAP को एक साथ मिलाकर न डालें)।\n* **जैविक उपाय:** मिट्टी की उर्वरता बढ़ाने के लिए बुवाई से पहले वर्मीकंपोस्ट या जीवामृत का प्रयोग करें।\n* **सुरक्षा:** खाद डालते समय हाथों में दस्ताने और मुंह पर मास्क जरूर पहनें।",
+        "answerEnglish": "Dear farmer brother, providing proper nutrition during the early stage (at sowing and first irrigation) of wheat is crucial for good growth and tillering:\n\n* **At Sowing Time (Basal Dose):** Apply 50 kg DAP + 20-25 kg MOP (Potash) per acre, OR 75 kg NPK (12:32:16) per acre.\n* **First Irrigation (20-25 Days - CRI Stage):** Apply 40-45 kg Neem Coated Urea per acre as top dressing during or right after the first irrigation.\n* **Micronutrients:** If soil is deficient in zinc, apply 10 kg Zinc Sulphate (21%) per acre at sowing time. (Note: Do not mix Zinc directly with DAP).\n* **Organic Option:** Apply well-decomposed FYM (Farm Yard Manure) or Jeevamrit to improve soil health.\n* **Safety Precaution:** Always wear gloves and a protective mask while handling and applying chemical fertilizers."
+      }
+    },
+    {
+      "id": "hist_1",
+      "type": "text_qa",
+      "title": "गेहूं में पीला रतुआ रोकथाम (Wheat Yellow Rust)",
+      "snippet": "नाइट्रोजन की संतुलित मात्रा दें और प्रोपिकोनाजोल 25% ईसी का छिड़काव करें।",
+      "date": "2026-09-09T20:22:36.985Z",
+      "language": "hi",
+      "data": {
+        "question": "गेहूं की पत्तियां पीली हो रही हैं क्या करें?",
+        "answer": "यह पीला रतुआ (Yellow Rust) या नाइट्रोजन की कमी हो सकती है। प्रोपिकोनाजोल 25% ईसी का 1 मिली प्रति लीटर पानी में मिलाकर छिड़काव करें और नजदीकी कृषि विज्ञान केंद्र से संपर्क करें।"
+      }
+    },
+    {
+      "id": "hist_2",
+      "type": "image_diagnosis",
+      "title": "धान ब्लास्ट रोग पहचान (Rice Blast Diagnosis)",
+      "snippet": "लीफ ब्लास्ट फफूंद के लक्षण। ट्राइसाइक्लाजोल 75 WP का उपयोग अनुशंसित है।",
+      "date": "2026-09-08T20:22:36.985Z",
+      "language": "hi",
+      "data": {
+        "crop": "धान (Rice / Paddy)",
+        "problem": "लीफ ब्लास्ट (Leaf Blast / Pyricularia oryzae)",
+        "confidence": "92%",
+        "healthStatus": "critical"
+      }
+    }
+  ],
+  "expertRequests": []
+}

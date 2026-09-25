@@ -1,0 +1,12 @@
+{
+  "name": "FieldNerve - Agriculture AI & Crop Health Platform",
+  "description": "AI-powered agriculture intelligence platform for farmers featuring 3D farm animation, instant crop disease photo diagnosis, localized climate advisory, bilingual Hindi/English voice assistance, and expert support.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

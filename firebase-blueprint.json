@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/firebase/firebase-tools/master/schema/firestore-blueprint.json",
+  "entities": {
+    "UserProfile": {
+      "collection": "users",
+      "fields": {
+        "uid": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "village": { "type": "string" },
+        "state": { "type": "string" },
+        "crops": { "type": "array", "items": { "type": "string" } },
+        "preferredLanguage": { "type": "string" },
+        "role": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "ExpertRequest": {
+      "collection": "expert_requests",
+      "fields": {
+        "id": { "type": "string" },
+        "farmerName": { "type": "string" },
+        "phone": { "type": "string" },
+        "crop": { "type": "string" },
+        "problem": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "CropScan": {
+      "collection": "users/{userId}/scans",
+      "fields": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "crop": { "type": "string" },
+        "problem": { "type": "string" },
+        "healthStatus": { "type": "string" },
+        "confidence": { "type": "string" },
+        "recommendations": { "type": "array", "items": { "type": "string" } },
+        "warning": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "FarmerQuery": {
+      "collection": "users/{userId}/queries",
+      "fields": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "question": { "type": "string" },
+        "answer": { "type": "string" },
+        "answerHindi": { "type": "string" },
+        "answerEnglish": { "type": "string" },
+        "audioScriptHindi": { "type": "string" },
+        "audioScriptEnglish": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    }
+  }
+}

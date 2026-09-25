@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+env/
+.venv/
+fieldnerve.db
+uploads/*
+!uploads/.gitkeep
+.pytest_cache/

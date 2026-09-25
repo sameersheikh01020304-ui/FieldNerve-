@@ -1,0 +1,39 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null && (
+        request.auth.token.email == 'sameersheikh01020304@gmail.com' ||
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin'
+      );
+    }
+
+    // User profile documents & registrations
+    match /users/{userId} {
+      allow read, write: if isAdmin() || (request.auth != null && request.auth.uid == userId);
+
+      // Scanned crop diagnosis records
+      match /scans/{scanId} {
+        allow read, write: if isAdmin() || (request.auth != null && request.auth.uid == userId);
+      }
+
+      // Farmer Q&A chat history
+      match /queries/{queryId} {
+        allow read, write: if isAdmin() || (request.auth != null && request.auth.uid == userId);
+      }
+    }
+
+    // Collection group permissions so Admin can read/manage all scans and queries
+    match /{path=**}/scans/{scanId} {
+      allow read, write: if isAdmin();
+    }
+    match /{path=**}/queries/{queryId} {
+      allow read, write: if isAdmin();
+    }
+
+    // Expert Support / Callback Requests
+    match /expert_requests/{requestId} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
