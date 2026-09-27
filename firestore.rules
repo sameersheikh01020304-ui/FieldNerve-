@@ -1,0 +1,55 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null && (
+        request.auth.token.email == 'sameersheikh01020304@gmail.com' ||
+        request.auth.token.email == 'admin@fieldnerve.com'
+      );
+    }
+
+    // User profile documents & registrations
+    match /users/{userId} {
+      allow read, write: if true;
+
+      // Scanned crop diagnosis records
+      match /scans/{scanId} {
+        allow read, write: if true;
+      }
+
+      // Farmer Q&A chat history
+      match /queries/{queryId} {
+        allow read, write: if true;
+      }
+
+      // Farmer Weather Alerts & Crop Health Reminders
+      match /notifications/{notifId} {
+        allow read, write: if true;
+      }
+
+      // FCM Device Registration Tokens
+      match /fcm_tokens/{tokenId} {
+        allow read, write: if true;
+      }
+    }
+
+    // Collection group permissions so Admin and portal can read/manage all records
+    match /{path=**}/scans/{scanId} {
+      allow read, write: if true;
+    }
+    match /{path=**}/queries/{queryId} {
+      allow read, write: if true;
+    }
+    match /{path=**}/notifications/{notifId} {
+      allow read, write: if true;
+    }
+    match /{path=**}/fcm_tokens/{tokenId} {
+      allow read, write: if true;
+    }
+
+    // Expert Support / Callback Requests
+    match /expert_requests/{requestId} {
+      allow read, write: if true;
+    }
+  }
+}

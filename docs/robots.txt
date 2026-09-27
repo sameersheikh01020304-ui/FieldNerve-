@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+Sitemap: https://fieldnerve.vercel.app/sitemap.xml
+Sitemap: https://sameersheikh01020304-ui.github.io/FieldNerve-/sitemap.xml
